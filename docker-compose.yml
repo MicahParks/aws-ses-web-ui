@@ -1,0 +1,15 @@
+version: "3"
+services:
+  indevpostgres:
+    image: "postgres:15"
+    deploy:
+      mode: "global"
+      restart_policy:
+        delay: "1s"
+        max_attempts: 3
+    environment:
+      POSTGRES_PASSWORD: "password"
+    ports:
+      - "5432:5432"
+    volumes:
+      - "./schema.sql:/docker-entrypoint-initdb.d/schema.sql"

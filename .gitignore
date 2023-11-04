@@ -1,0 +1,4 @@
+.idea
+config.local.json
+delme*
+node_modules
