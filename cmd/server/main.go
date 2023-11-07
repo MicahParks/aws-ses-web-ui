@@ -70,10 +70,10 @@ func main() {
 	}
 	l.Debug("Handlers attached.")
 
-	l.Info("Server listening on http://localhost:8081")
+	l.Info("Server listening on http://localhost:8080")
 	serveArgs := hh.ServeArgs{
 		Logger:          l.With("httphandle", true),
-		Port:            8081,
+		Port:            8080,
 		ShutdownFunc:    srv.Shutdown,
 		ShutdownTimeout: 10 * time.Second,
 	}

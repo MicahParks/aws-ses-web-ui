@@ -1,7 +1,15 @@
 version: "3"
 services:
-  indevpostgres:
-    image: "postgres:15"
+  aswu:
+    build:
+      context: "."
+      dockerfile: "Dockerfile"
+    ports:
+      - "8080:8080"
+    volumes:
+      - "./config.json:/config.json"
+  aswupostgres:
+    image: "postgres:16"
     deploy:
       mode: "global"
       restart_policy:
