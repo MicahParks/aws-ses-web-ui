@@ -1,7 +1,9 @@
 # aws-ses-web-ui
 
 aws-ses-web-ui is a simple web interface for sending email via AWS SES. It requires an AWS account with SES enabled and
-at least one verified identity. This project is meant for individuals to run on their personal computers.
+at least one verified identity. This project is meant for individuals to run on their personal computers. I
+wrote [this Medium article](https://micahparks.medium.com/unlimited-email-addresses-for-your-domain-aws-ses-and-registrar-forwarding-43dbc15b422c?source=friends_link&sk=244e6ce650aad18ed7d15ddba0aee49b)
+for this project.
 
 This project is a single Golang executable that runs a web server. The web UI is built using:
 
