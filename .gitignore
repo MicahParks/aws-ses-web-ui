@@ -1,5 +1,5 @@
 .idea
 config.json
-config.local.json
+config.*.json
 delme*
 node_modules
